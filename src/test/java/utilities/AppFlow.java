@@ -33,7 +33,6 @@ public class AppFlow {
 
     public static void switchToCertainWindow(String title){
         Set<String> handles = Driver.getDriver().getWindowHandles();
-
         for (String id : handles){
             Driver.getDriver().switchTo().window(id);
             String title1 = Driver.getDriver().getTitle();
